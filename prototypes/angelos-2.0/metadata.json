@@ -1,0 +1,6 @@
+{
+  "name": "CloudArch Dashboard",
+  "description": "Uma plataforma de visualização de arquitetura em nuvem com geração de código Python para infraestrutura.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

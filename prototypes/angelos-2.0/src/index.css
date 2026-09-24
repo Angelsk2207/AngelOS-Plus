@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #05060b;
+  --color-surface: #080a14;
+  --color-glass: rgba(15, 23, 42, 0.6);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-accent: #3b82f6;
+  --color-accent-dark: #2563eb;
+  --color-success: #10b981;
+  --color-warning: #fbbf24;
+  --color-text-primary: #e2e8f0;
+  --color-text-secondary: #94a3b8;
+  
+  --font-mono: "Courier New", Courier, monospace;
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text-primary font-sans antialiased;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-glass backdrop-blur-xl border border-white/10 rounded-xl;
+  }
+  
+  .glow-bg {
+    @apply absolute pointer-events-none;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+  }
+
+  .node-active {
+    @apply rounded-full;
+    background: theme('colors.success');
+    box-shadow: 0 0 10px theme('colors.success');
+  }
+
+  .terminal-font {
+    @apply font-mono leading-relaxed;
+    font-size: 13px;
+  }
+}
+
+/* Custom scrollbar for immersive feel */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #05060b;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+@theme {
+  --color-bg: #05060b;
+  --color-surface: #080a14;
+  --color-glass: rgba(15, 23, 42, 0.6);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-accent: #3b82f6;
+  --color-accent-dark: #2563eb;
+  --color-success: #10b981;
+  --color-warning: #fbbf24;
+  --color-text-primary: #e2e8f0;
+  --color-text-secondary: #94a3b8;
+  
+  --font-mono: "Courier New", Courier, monospace;
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text-primary font-sans antialiased;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-glass backdrop-blur-xl border border-white/10 rounded-xl;
+  }
+  
+  .glow-bg {
+    @apply absolute pointer-events-none;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+  }
+
+  .node-active {
+    @apply rounded-full;
+    background: theme('colors.success');
+    box-shadow: 0 0 10px theme('colors.success');
+  }
+
+  .terminal-font {
+    @apply font-mono leading-relaxed;
+    font-size: 13px;
+  }
+}
+
+/* Custom scrollbar for immersive feel */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #05060b;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}

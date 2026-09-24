@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: atena-n8n
+    env: docker
+    plan: free
+    dockerContext: .
+    healthCheckPath: /healthz
+    envVars:
+      - key: N8N_ENCRYPTION_KEY
+        generateValue: true
+      - key: N8N_PORT
+        value: "10000"
+      - key: N8N_HOST
+        value: atena-n8n.onrender.com
+      - key: N8N_PROTOCOL
+        value: https
+      - key: N8N_METRICS
+        value: "false"
+      - key: N8N_SKIP_WEBHOOK_DEREGISTRATION_SHUTDOWN
+        value: "true"
+      - key: TZ
+        value: America/Sao_Paulo
+      - key: GENERIC_TIMEZONE
+        value: America/Sao_Paulo

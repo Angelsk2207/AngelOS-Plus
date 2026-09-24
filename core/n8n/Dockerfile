@@ -1,0 +1,2 @@
+FROM n8nio/n8n:1.123.67
+ENV N8N_API_ENABLED=true

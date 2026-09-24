@@ -1,0 +1,6 @@
+{
+  "name": "AWS Offline Simulator",
+  "description": "A local AWS console simulator that works offline by managing file systems and SQLite databases, with an Obsidian-style interface.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

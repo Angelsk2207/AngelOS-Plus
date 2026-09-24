@@ -2,6 +2,10 @@
 
 > **O sistema adapta ao usuário e não ao contrário.**
 
+## Identidade visual
+
+Veja o [painel e o guia visual do AngelOS Plus](docs/brand/visual-identity.md).
+
 AngelOS Plus é o repositório unificado que centraliza versões anteriores do AngelOS e componentes selecionados da Atena, com a meta de reuni-los em um ecossistema híbrido, adaptativo e orientado por agentes. Esta consolidação organiza código e documentação de origem; **não significa que todos os módulos estejam integrados ou prontos para produção**.
 
 ## Visão-alvo
